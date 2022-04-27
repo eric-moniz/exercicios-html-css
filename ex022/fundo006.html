@@ -5,35 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
 
     <!-- !! Usando técnicas para ajustar dinamicamente tamanho da imagem de fundo -->
 
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-position: center top;
+            background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed; */
+            /*! SHORTHAND da propriedade background
+            
+                color > image > position > repeat > [size] > attachment
+
+            */
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
-            border-radius: 15px;
+            border-radius: 15px;  
         }
     </style>
 
 </head>
 <body>
     <main>
-        <h1>Teste de iamgem de fundo</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure voluptatum, fugit dolores a obcaecati non veniam facilis, assumenda laudantium similique optio! Dolorum natus sapiente reiciendis vel commodi vitae aspernatur temporibus?Tenetur fuga magni, officiis nostrum sunt doloremque aut commodi tempore maxime iste id temporibus doloribus cupiditate quam repudiandae debitis. Doloremque voluptas harum optio saepe recusandae nobis ad. A, quos eligendi.Ducimus dolorum vitae atque possimus illo vel consectetur, eum minus neque incidunt id ea ad quibusdam placeat cupiditate molestiae aspernatur quam. Vel consequatur dignissimos veniam, ex enim excepturi illum aperiam!
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur          adipisicing elit. Iure voluptatum, fugit dolores a obcaecati non veniam facilis, assumenda laudantium similique optio! Dolorum natus sapiente reiciendis vel commodi vitae aspernatur temporibus?Tenetur fuga magni, officiis nostrum sunt doloremque aut commodi tempore maxime iste id temporibus doloribus cupiditate quam repudiandae debitis. Doloremque voluptas harum optio saepe recusandae nobis ad. A, quos eligendi.Ducimus dolorum vitae atque possimus illo vel consectetur, eum minus neque incidunt id ea ad quibusdam placeat cupiditate molestiae aspernatur quam. Vel consequatur dignissimos veniam, ex enim excepturi illum aperiam!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, architecto officiis ab voluptate nisi, inventore minima autem nobis soluta animi, ex voluptates quo natus porro! Eius nulla ipsam odit recusandae.
+        Modi veritatis nam corrupti commodi facere ad est quis, ab, sed labore officia itaque et perspiciatis harum magni accusantium eius! Maxime reprehenderit officiis quasi vero odio ad porro labore neque?
+        Quod dolorum sed, mollitia commodi beatae minima ipsa. Cumque eligendi nam asperiores ipsam labore accusantium libero nobis ut magnam error assumenda quia quo praesentium sequi et, commodi laboriosam autem ducimus.
         </p>
     </main>
 </body>
