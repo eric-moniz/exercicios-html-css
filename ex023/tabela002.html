@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+
+        table {
+            width: 1000px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+
+<body>
+    <h1>Uso de tabelas grandes</h1>
+        <!-- Anatomia para tabelas grandes:
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Unidade Federativa</th>
+                <th>População (2010)</th>
+                <th>População (2021)</th>
+                <th>Mudança</th>
+                <th>% da pop. total</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <th></th>
+            <th>Total de habitantes</th>
+            <td class="num"><strong>190.755.799</strong></td>
+            <td class="num"><strong>213.317.639</strong></td>
+            <td></td>
+            <td class="num"><strong>100%</strong></td>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+                <td class="num">46.649.132</td>
+                <td class="num">13,05%</td>
+                <td class="num">21,90%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+                <td class="num">21.411.923</td>
+                <td class="num">9,26%</td>
+                <td class="num">10,10%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+                <td class="num">17.463.349</td>
+                <td class="num">9,21%</td>
+                <td class="num">8,20%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="num">14.016.906</td>
+                <td class="num">14.985.284</td>
+                <td class="num">6,91%</td>
+                <td class="num">7,10%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td class="num">10.444.526</td>
+                <td class="num">11.597.484</td>
+                <td class="num">11,04%</td>
+                <td class="num">5,40%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.693.929</td>
+                <td class="num">11.466.630</td>
+                <td class="num">7,23%</td>
+                <td class="num">5,40%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pernambuco</td>
+                <td class="num">8.796.448</td>
+                <td class="num">9.674.793</td>
+                <td class="num">9,98%</td>
+                <td class="num">4,50%</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Ceará</td>
+                <td class="num">8.452.381</td>
+                <td class="num">9.240.580</td>
+                <td class="num">9,32%</td>
+                <td class="num">4,30%</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Pará</td>
+                <td class="num">7.581.051</td>
+                <td class="num">8.777.124</td>
+                <td class="num">15,78%</td>
+                <td class="num">4,10%</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Santa Catarina</td>
+                <td class="num">6.248.436</td>
+                <td class="num">7.338.473</td>
+                <td class="num">17,44%</td>
+                <td class="num">3,40%</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Goiás</td>
+                <td class="num">6.003.788</td>
+                <td class="num">7.206.589</td>
+                <td class="num">20,03%</td>
+                <td class="num">3,40%</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Maranhão</td>
+                <td class="num">6.574.789</td>
+                <td class="num">7.153.262</td>
+                <td class="num">8,80%</td>
+                <td class="num">3,40%</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Amazonas</td>
+                <td class="num">3.483.985</td>
+                <td class="num">4.269.995</td>
+                <td class="num">22,56%</td>
+                <td class="num">2,00%</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Espírito Santo</td>
+                <td class="num">3.514.952</td>
+                <td class="num">4.108.508</td>
+                <td class="num">16,89%</td>
+                <td class="num">1,90%</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Paraíba</td>
+                <td class="num">3.766.528</td>
+                <td class="num">4.059.905</td>
+                <td class="num">7,79%</td>
+                <td class="num">1,90%</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Mato Grosso</td>
+                <td class="num">3.035.122</td>
+                <td class="num">3.567.234</td>
+                <td class="num">17,53%</td>
+                <td class="num">1,70%</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.168.027</td>
+                <td class="num">3.560.903</td>
+                <td class="num">12,40%</td>
+                <td class="num">1,70%</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Alagoas</td>
+                <td class="num">3.120.494</td>
+                <td class="num">3.365.351</td>
+                <td class="num">7,85%</td>
+                <td class="num">1,60%</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Piauí</td>
+                <td class="num">3.118.360</td>
+                <td class="num">3.289.290</td>
+                <td class="num">5,48%</td>
+                <td class="num">1,60%</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Distrito Federal</td>
+                <td class="num">2.570.160</td>
+                <td class="num">3.094.325</td>
+                <td class="num">20,39%</td>
+                <td class="num">1,40%</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.449.024</td>
+                <td class="num">2.839.188</td>
+                <td class="num">15,93%</td>
+                <td class="num">1,30%</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Sergipe</td>
+                <td class="num">2.068.017</td>
+                <td class="num">2.338.474</td>
+                <td class="num">13,07%</td>
+                <td class="num">1,10%</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Rondônia</td>
+                <td class="num">1.562.409</td>
+                <td class="num">1.815.278</td>
+                <td class="num">16,18%</td>
+                <td class="num">0,80%</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Tocantins</td>
+                <td class="num">1.383.445</td>
+                <td class="num">1.607.363</td>
+                <td class="num">16,18%</td>
+                <td class="num">0,70%</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Acre</td>
+                <td class="num">733.559</td>
+                <td class="num">906.876</td>
+                <td class="num">23,63%</td>
+                <td class="num">0,40%</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Amapá</td>
+                <td class="num">669.526</td>
+                <td class="num">877.613</td>
+                <td class="num">31,08%</td>
+                <td class="num">0,40%</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Roraima</td>
+                <td class="num">450.479</td>
+                <td class="num">652.713</td>
+                <td class="num">44,89%</td>
+                <td class="num">0,30%</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
