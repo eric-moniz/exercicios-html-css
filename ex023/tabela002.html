@@ -13,9 +13,16 @@
         }
 
         table {
-            width: 1000px;
+            /* width: 1000px; */
             border-collapse: collapse;
             text-align: center;
+        }
+
+        caption {
+            background-color: rgba(0, 0, 0, 0.249);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
         }
 
         td, th {
@@ -37,6 +44,7 @@
     <h1>Uso de tabelas grandes</h1>
         <!-- Anatomia para tabelas grandes:
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -45,20 +53,22 @@
                 TR, TD, TH -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Unidade Federativa</th>
-                <th>População (2010)</th>
-                <th>População (2021)</th>
-                <th>Mudança</th>
-                <th>% da pop. total</th>
+                <th scope="col" style="width: 50px;">Posição</th>
+                <th scope="col" style="width: 150px;">Unidade Federativa</th>
+                <th scope="col" style="width: 140px;">População (2010)</th>
+                <th scope="col" style="width: 140px;">População (2021)</th>
+                <th scope="col" style="width: 75px;">Mudança</th>
+                <th scope="col" style="width: 120px;">% da pop. total</th>
             </tr>
         </thead>
 
         <tfoot>
             <th></th>
-            <th>Total de habitantes</th>
+            <th scope="row">Total de habitantes</th>
             <td class="num"><strong>190.755.799</strong></td>
             <td class="num"><strong>213.317.639</strong></td>
             <td></td>
