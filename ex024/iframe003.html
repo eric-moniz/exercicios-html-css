@@ -28,9 +28,21 @@
     </p>
 
     <ul>
-      <li><a href="paginas-extras/pagina001.html">Primeira página</a></li>
-      <li><a href="#">Segunda página</a></li>
-      <li><a href="#">Terceira página</a></li>
+      <li>
+        <a href="paginas-extras/pagina001.html" target="frame"
+          >Primeira página</a
+        >
+      </li>
+      <li>
+        <a href="paginas-extras/pagina002.html" target="frame"
+          >Segunda página</a
+        >
+      </li>
+      <li>
+        <a href="paginas-extras/pagina003.html" target="frame"
+          >Terceira página</a
+        >
+      </li>
     </ul>
 
     <p>
@@ -43,7 +55,11 @@
       molestias, labore ducimus voluptates?
     </p>
 
-    <iframe id="tela" src="">
+    <iframe
+      id="tela"
+      name="frame"
+      srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium unde atque placeat laboriosam dolores consequatur voluptatum ea asperiores eum sit porro, ducimus aspernatur ipsum eaque odit voluptas enim commodi delectus?</p><img scr='imagens/cursoemvideo.png'>"
+    >
       <p>Infelizmente seu navegador não é compatível</p>
     </iframe>
 
